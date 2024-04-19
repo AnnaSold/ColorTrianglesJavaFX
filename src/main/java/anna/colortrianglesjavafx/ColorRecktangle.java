@@ -26,6 +26,18 @@ public class ColorRecktangle {
                 '}';
     }
 
+    public double getLength() {
+        return length;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
     public static List<ColorRecktangle> readFile(String filename) throws FileNotFoundException {
         List<ColorRecktangle> colorRecktangles = new ArrayList<>();
 
