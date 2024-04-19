@@ -5,6 +5,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Rectangle;
 
@@ -29,8 +30,7 @@ public class HelloController {
         List<ColorRecktangle> colorRecktangles = ColorRecktangle.readFile(fname);
         for (int i = 0; i < colorRecktangles.size(); i++) {
             ColorRecktangle r = colorRecktangles.get(i);
-            Paint p = new Paint();
-            Rectangle rect = new Rectangle(r.getLength(),r.getWidth(),);
+            Rectangle rect = new Rectangle(r.getLength(),r.getWidth(), Color.valueOf(r.getColor()));
             vboxForRecktangle.getChildren().add(rect);
         }
 
