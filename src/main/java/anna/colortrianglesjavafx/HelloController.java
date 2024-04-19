@@ -23,6 +23,10 @@ public class HelloController {
     public void loadFile() throws FileNotFoundException {
         String fname = field1.getText();
         List<ColorRecktangle> colorRecktangles = ColorRecktangle.readFile(fname);
+        for (int i = 0; i < colorRecktangles.size(); i++) {
+
+            vboxForRecktangle.getChildren().add(colorRecktangles.get(i));
+        }
 
     }
 }
