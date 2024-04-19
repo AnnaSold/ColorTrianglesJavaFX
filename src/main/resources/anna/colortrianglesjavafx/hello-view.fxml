@@ -6,7 +6,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Rectangle?>
 
 <VBox fx:id="vboxForRecktangle" alignment="CENTER" prefHeight="308.0" prefWidth="436.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="anna.colortrianglesjavafx.HelloController">
     <padding>
@@ -20,5 +19,4 @@
          <TextField fx:id="field1" layoutX="124.0" layoutY="52.0" onAction="#loadFile" />
       </children>
    </AnchorPane>
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="133.0" stroke="BLACK" strokeType="INSIDE" width="146.0" />
 </VBox>

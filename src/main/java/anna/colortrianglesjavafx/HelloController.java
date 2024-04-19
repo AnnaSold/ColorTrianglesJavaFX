@@ -28,8 +28,7 @@ public class HelloController {
     public void loadFile() throws FileNotFoundException {
         String fname = field1.getText();
         List<ColorRecktangle> colorRecktangles = ColorRecktangle.readFile(fname);
-        for (int i = 0; i < colorRecktangles.size(); i++) {
-            ColorRecktangle r = colorRecktangles.get(i);
+        for (ColorRecktangle r: colorRecktangles) {
             Rectangle rect = new Rectangle(r.getLength(),r.getWidth(), Color.valueOf(r.getColor()));
             vboxForRecktangle.getChildren().add(rect);
         }
